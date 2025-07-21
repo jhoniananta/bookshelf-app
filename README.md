@@ -28,7 +28,9 @@ Untuk mempermudah penilaian submission yang dikirim, Anda perlu memahami ketentu
   <p data-testid="bookItemAuthor">Penulis: {{ penulis_buku }}</p>
   <p data-testid="bookItemYear">Tahun: {{ tahun_rilis_buku }}</p>
   <div>
-    <button data-testid="bookItemIsCompleteButton">{{ tombol_untuk_ubah_kondisi }}</button>
+    <button data-testid="bookItemIsCompleteButton">
+      {{ tombol_untuk_ubah_kondisi }}
+    </button>
     <button data-testid="bookItemDeleteButton">{{ tombol_untuk_hapus }}</button>
     <button data-testid="bookItemEditButton">{{ tombol_untuk_edit }}</button>
   </div>

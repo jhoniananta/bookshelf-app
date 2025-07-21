@@ -44,7 +44,7 @@ function makeBook(title, author, year, isComplete) {
     id: generateId(),
     title,
     author,
-    year,
+    year: parseInt(year),
     isComplete,
   };
 }
@@ -53,7 +53,7 @@ function makeBook(title, author, year, isComplete) {
 function addBook() {
   const title = document.getElementById("bookFormTitle").value;
   const author = document.getElementById("bookFormAuthor").value;
-  const year = document.getElementById("bookFormYear").value;
+  const year = parseInt(document.getElementById("bookFormYear").value);
   const isComplete = document.getElementById("bookFormIsComplete").checked;
 
   const bookObject = makeBook(title, author, year, isComplete);
